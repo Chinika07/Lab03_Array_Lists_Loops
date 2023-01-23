@@ -31,8 +31,11 @@ public class Runner {
 //        7. Print the number of islands in your arraylist
         System.out.println(scottishIslands.size());
 //        8. Sort the list alphabetically
-
+        Collections.sort(scottishIslands);
 //        9. Print out all the islands using a for loop
+        for (String i : scottishIslands) {
+        System.out.println(i);
+        }
 
         System.out.println(scottishIslands);
 
