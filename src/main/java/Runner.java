@@ -18,18 +18,25 @@ public class Runner {
 
 //        2. Add "Tiree" to the start of the list
         scottishIslands.add(0, "Tiree");
+
 //        3. Add "Islay" after "Jura" and before "Mull"
         scottishIslands.add(2, "Islay");
+
 //        4. Print out the index position of "Skye"
         System.out.println(scottishIslands.indexOf("Skye"));
+
 //        5. Remove "Tresco" from the list by name
         scottishIslands.remove("Tresco");
+
 //        6. Remove "Arran" from the list by index
         scottishIslands.remove(5);
+
 //        7. Print the number of islands in your arraylist
         System.out.println(scottishIslands.size());
+
 //        8. Sort the list alphabetically
         Collections.sort(scottishIslands);
+
 //        9. Print out all the islands using a for loop
         for (String i : scottishIslands) {
             System.out.println(i);
@@ -52,6 +59,7 @@ public class Runner {
             }
 //
         }
+
 //        2. Print the difference between the largest and smallest value
         int[] arrayNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
         System.out.println("Original Array: " + Arrays.toString(arrayNumbers));
@@ -75,6 +83,7 @@ public class Runner {
                 sum += i;
             System.out.println("The sum of our array is: " + sum);
         }
+        
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count.
