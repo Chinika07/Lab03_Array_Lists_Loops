@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class Runner {
 
@@ -20,9 +17,9 @@ public class Runner {
         scottishIslands.add("Coll");
 
 //        2. Add "Tiree" to the start of the list
-       scottishIslands.add(0,"Tiree");
+        scottishIslands.add(0, "Tiree");
 //        3. Add "Islay" after "Jura" and before "Mull"
-       scottishIslands.add(2,"Islay");
+        scottishIslands.add(2, "Islay");
 //        4. Print out the index position of "Skye"
 //        System.out.println(scottishIslands.indexOf("Skye"));
 //        5. Remove "Tresco" from the list by name
@@ -47,23 +44,45 @@ public class Runner {
         System.out.println("numbers: " + numbers);
 
 //        1. Print out a list of the even integers
-        int evenNumbers[]={1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+        int evenNumbers[] = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
         System.out.println("Even Numbers:");
-        for(int i=0;i<evenNumbers.length;i++){
-            if(evenNumbers[i]%2==0){
+        for (int i = 0; i < evenNumbers.length; i++) {
+            if (evenNumbers[i] % 2 == 0) {
                 System.out.println(evenNumbers[i]);
-
-
             }
-//        int[] evenNumbers ={1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
-//        for (int i = 0; i < evenNumbers.length; i++) {
-//            if(evenNumbers[i]%2 == 0) {
-//            }
-//            System.out.println(evenNumbers[i]);
+//
         }
-
-
 //        2. Print the difference between the largest and smallest value
+        int[] arrayNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+        System.out.println("Original Array: "+ Arrays.toString(arrayNumbers));
+        int max_val = arrayNumbers[0];
+        int min = arrayNumbers[0];
+        for(int i = 1; i < arrayNumbers.length; i++)
+        {
+            if(arrayNumbers[i] > max_val)
+                max_val = arrayNumbers[i];
+            else if(arrayNumbers[i] < min)
+                min = arrayNumbers[i];
+        }
+        System.out.println("Difference Between the largest and smallest values of the said array: "+(max_val-min));
+//
+//        int difference[] = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+//        int max_val = difference[0];
+//        int min_val = difference[0];
+//        for (int i = 0; i < difference.length; i++) {
+//            if(difference[i] > max_val) {
+//                max_val = difference[i];
+//            } else if (difference[i] < min_val) {
+//                min_val = difference[i];
+//                break;
+//            }
+//
+//            System.out.println("Difference between the largest and smallest values of the said array: "+(max_val-min_val));
+
+
+        }
+    }
+
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
 //        4. Print the sum of the numbers,
 //        5. Print the sum of the numbers...
@@ -72,6 +91,4 @@ public class Runner {
 //
 //          So [2, 7, 13, 2] would have sum of 9.
 
-    }
 
-}
